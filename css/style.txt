@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/salon-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+.card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.table-responsive {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.table th, .table td {
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 300px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
